@@ -48,7 +48,7 @@ When(/^I found the Login form and "([^"]*)" button$/, async (SigninButton) => {
 
 Then(/^I should be taken on the users home page$/, async () =>{
  
-return await base.Validatetitle("Corvium1")
+return await base.Validatetitle("Corvium")
 
 })
 
