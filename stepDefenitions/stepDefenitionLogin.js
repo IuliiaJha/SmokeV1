@@ -1,6 +1,6 @@
 var { Given, When, And, Then, After } = require("cucumber");
 const protractorHelper = require("protractor-helper");
-require("assertion-soft");
+
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
