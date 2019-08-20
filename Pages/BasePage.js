@@ -9,8 +9,8 @@ module.exports ={
 
 go:function(){
    
-    return browser.get('https://controlpro.corvium.com');
-    // return browser.get(prop.get('baseUrl'))
+    return browser.get(prop.get('baseUrl'));
+   
 
 },
 gettitle: function (){

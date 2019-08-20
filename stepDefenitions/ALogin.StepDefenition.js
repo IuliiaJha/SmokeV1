@@ -11,12 +11,13 @@ var EC = protractor.ExpectedConditions;
 var PropertiesReader = require("properties-reader");
 
 var base = require("../Pages/BasePage.js");
-var home = require("../Pages/HomePage.js");
+var dashboard = require("../Pages/DashboardPage.js");
 var customerLogin = require("../Pages/CustomerLoginPage.js");
 var prop = PropertiesReader("./property/prop.properties");
 
 
 Given(/^As an existing user I go to login Page$/, async () => {
+
 
   base.go();
 });
@@ -31,24 +32,23 @@ When(/^I found the title as "([^"]*)"$/, async (expectedTitle) => {
 });
 
 
-When(/^I enter valid userName and password and click the Sign In button$/, async()=> {
-
+When(/^I enter valid userName and password and click the Sign In button$/, async () => {
   return customerLogin.Login();
 });
 
 When(/^I found the Login form and "([^"]*)" button$/, async (SigninButton) => {
-
   expect(customerLogin.elementsCustomerLoginPage.LoginForm.isDisplayed()).to.eventually.be.true;
   await customerLogin.elementsCustomerLoginPage.SignInButton.getText().then(function (text) {
     console.log(text)
   })
   expect(customerLogin.elementsCustomerLoginPage.SignInButton.getText()).to.eventually.equal(SigninButton);
-
 });
 
-Then(/^I should be taken on the users home page$/, async () =>{
- 
-return await base.Validatetitle("Corvium")
+Then(/^I should be taken on the users home page$/, async () => {
+
+  await base.Validatetitle("Corvium");
+  
+
 
 })
 

@@ -26,5 +26,12 @@ return browser.takeScreenshot()
       console.log("scenarioResult  = ",scenarioResult.result.status);
   });
   }
-});
-  
+
+// After ( async function(){
+//   //  await browser.executeScript('window.sessionStorage.clear();');
+//   //   await  browser.executeScript('window.localStorage.clear();');
+//   await console.log ('YyYYYYYYYYYYY')
+//   });
+// });
+
+})
