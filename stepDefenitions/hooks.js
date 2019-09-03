@@ -1,16 +1,6 @@
-var {Given,When, Then, Before,BeforeAll, After, AfterAll} = require ('cucumber')
-
-//   BeforeAll (function(){
-// console.log ("BeforeAll hook")
-//   });  
-  
-//   AfterAll (function(){
-//     console.log ("AfterAll hook")
-//   });
-
-//   Before (function(){
-//     console.log ("Before hook")
-//       });
+/*jshint esversion:6*/
+/*jshint esversion:8*/
+var {Given,When, Then, Before,BeforeAll, After, AfterAll} = require ('cucumber');
 
   
 
@@ -34,4 +24,4 @@ return browser.takeScreenshot()
 //   });
 // });
 
-})
+});

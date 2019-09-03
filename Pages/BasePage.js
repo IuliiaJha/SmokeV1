@@ -1,3 +1,5 @@
+/*jshint esversion:6*/
+/*jshint esversion:8*/
 var PropertiesReader = require('properties-reader');
 var prop = PropertiesReader('./property/prop.properties');
 var chai = require("chai");
@@ -18,9 +20,11 @@ return browser.getTitle();
 },
 
 Validatetitle: async function (expectedTitle ) {
-let actualTitle = await browser.getTitle()
-console.log(actualTitle)
-return expect(actualTitle).equal(expectedTitle)
+let actualTitle = await browser.getTitle();
+console.log(actualTitle);
+return expect(actualTitle).equal(expectedTitle);
 }
 
-}
+// SelectFromDropdown: async function()
+
+};
