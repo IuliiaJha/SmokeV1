@@ -63,7 +63,7 @@ exports.config = {
 
     cucumberOpts: {
       // require step definitions
-      tags: false,
+      tags: '@smoke',
       format:'json:.tmp/results.json',
       require: [
         prop.get('stepsPath')    // 'features/stepDefinitions/stepDefinition.js' // accepts a glob

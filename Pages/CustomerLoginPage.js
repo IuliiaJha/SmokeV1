@@ -12,7 +12,6 @@ module.exports = {
 
     Login: async function () {
         var elements = this.elementsCustomerLoginPage;
-
         await elements.UsernameInputBox.sendKeys(prop.get("username"));
         await elements.PasswordInputBox.sendKeys(prop.get("password"));
         return await browser.actions().mouseMove(elements.SignInButton).click().perform();

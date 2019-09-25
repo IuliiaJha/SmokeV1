@@ -25,6 +25,6 @@ console.log(actualTitle);
 return expect(actualTitle).equal(expectedTitle);
 }
 
-// SelectFromDropdown: async function()
+
 
 };
